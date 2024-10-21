@@ -1,3 +1,11 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javafunkylist;
+
 /**
  *
  * @author se20-005
@@ -24,8 +32,25 @@ public class Javafunkylist {
                 System.out.println(i);
             }
         }
-        System.out.println("===END OF FIZZBUZZ===");
+        System.out.println("===END OF FIZZBUZZ===\n\n");
+        System.out.println("===START OF PRIME LIST ARRAY===");
         
+        ArrayList<Integer> primes = new ArrayList<>();
+        int tot = 0;
+
+        // List of first 10 prime numbers
+        int[] firstTenPrimes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
+
+        // Add each prime number to the ArrayList and calculate the total
+        for (int prime : firstTenPrimes) {
+            primes.add(prime);
+            tot += prime;
+        }
+
+        // Output the results
+        System.out.println("First 10 prime numbers: " + primes);
+        System.out.println("Total sum of first 10 prime numbers: " + tot);
+    }
     }
     
 }
